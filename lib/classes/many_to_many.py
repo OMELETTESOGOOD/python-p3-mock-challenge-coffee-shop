@@ -10,7 +10,6 @@ class Customer:
 
     @name.setter
     def name(self, value: str):
-        # Must be str, 1–15 chars, otherwise ignore
         if isinstance(value, str) and (1 <= len(value) <= 15):
             self._name = value
 
